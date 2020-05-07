@@ -1,0 +1,28 @@
+checker:
+
+  # Check for latest version of NitroX
+  check_for_updates: true
+
+  # Threads for checking Nitro codes
+  threads: 150
+
+  # Higher for better accuracy but slower (counted in milliseconds)
+  timeout: 6000
+
+  # Normal users should keep this false unless problem start happening
+  debugging: false
+  
+
+  proxy:
+    # Proxy types: https | socks4 | socks5
+    proxy_type: 'socks4'
+    # Proxy file name
+    proxy_file: 'proxies.txt'
+    
+    # If proxy api link to be used.
+    proxy_use_api: true
+    # If proxy_use_api is true, put api link in the parentheses
+    proxy_api_link: "https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=2000"
+    # If proxy_use_api is true, put a number for seconds to refresh the link (0 is for no refresh, recommend refresh: 300 seconds aka 5 minutes)
+    refresh_api_link: 300
+
